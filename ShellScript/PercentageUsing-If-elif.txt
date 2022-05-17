@@ -1,0 +1,28 @@
+#!/bin/bash
+
+###################################################
+# Check the user percentage and display the result
+###################################################
+PERC=75
+
+if [ "$PERC" -gt 65 ]; then
+  
+  echo "RESULT : FIRST DIVISION"
+
+elif [ "$PERC" -gt 55 ]; then
+
+  echo "RESULT: SECOND DIVISION"
+
+elif [ "$PERC" gt 35 ]; then
+
+  echo "RESULT : THIRD DIVISION"
+
+else
+
+  "RESULT: FAILED"
+
+fi
+
+
+
+
