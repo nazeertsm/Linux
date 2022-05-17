@@ -1,0 +1,17 @@
+#!/bin/bash
+###################################################
+# Check whether an integer is positive or negative
+######################################################
+echo
+echo "Enter an integer"
+echo
+read num
+
+if [ "$num" -ge 0 ]; then
+
+ echo "$num" is positive number
+
+else 
+  echo "$num" is Negative number
+
+fi
