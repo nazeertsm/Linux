@@ -1,0 +1,21 @@
+#!/bin/bash
+##################################################
+# massuser creation using for loop
+# from a file
+#################################################
+
+MYLIST=$1
+if [ ! $MYLIST ]; then
+  echo "Please provide userlist file.."
+exit
+fi
+
+if [ ! -f $MYLIST ]; then
+  echo " The file not matching , Enter correct name"
+  exit
+fi
+
+for MYUSER in `cat $MYLIST`
+do
+  ./createuser.sh $MYUSER
+done

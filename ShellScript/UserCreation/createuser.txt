@@ -1,0 +1,29 @@
+#!/bin/bash
+##################################################
+#Accept username as arg and check then create user
+###################################################
+MYUSER=$1
+if [ ! $MYUSER ]; then
+  echo "Please provide the username to add"
+  exit
+fi
+
+###################################################
+# root user only can add user, check the condition
+##################################################
+RUNUSER=`/usr/bin/whoami`
+if [ "$RUNUSER" != 'root' ]; then
+  echo "You must be root user to create/add a new user"
+  exit
+fi
+
+/usr/bin/id $MYUSER
+
+if [ $? -eq 0 ]; then
+  echo "The user $MYUSER already existing, please provide different username"
+  exit
+fi
+
+/sbin/useradd $MYUSER
+echo " The user $MYUSER created sucessfully"
+

@@ -1,0 +1,9 @@
+#!/bin/bash
+#######################################################################################
+# Print date"
+#The shell runs the command within the backticks and assigns the output to the variable
+########################################################################################
+DATEVAR=`date`
+echo
+echo date and time: "$DATEVAR"
+

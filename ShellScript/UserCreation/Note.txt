@@ -1,0 +1,12 @@
+1. Createuser.sh file create the user list by passing arguments
+Eg:
+[root@linuxhost shellscripts]# ./createuser.sh  tuser4
+/usr/bin/id: ‘tuser4’: no such user
+ The user tuser4 created sucessfully
+[root@linuxhost shellscripts]#
+
+User creation from userlist.txt
+1. Userlist available in userlist.txt
+Execute the below script by passing userlist.txt as argument
+inside foruser.sh file, createuser.sh calling to create users
+[root@linuxhost shellscripts]# ./foruser.sh userlist.txt 
