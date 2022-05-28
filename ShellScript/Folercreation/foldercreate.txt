@@ -1,0 +1,13 @@
+#!/bin/bash  
+  
+file=$1  
+while read line; do  
+  
+#Readind each line in sequence  
+echo $line  
+mkdir $line
+
+
+done <foldernamelist.txt
+
+
