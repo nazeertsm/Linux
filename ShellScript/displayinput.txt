@@ -1,0 +1,8 @@
+#!/bin/bash
+
+ 
+#Bash Shell script to print a number entered by a user
+echo -n "Enter a number: "
+read number
+echo "You have entered: $number"
+
